@@ -1,0 +1,26 @@
+<div>
+  <form action="/students" method="POST">
+
+    <label for="firstName">First name:</label>
+    <input type="text" name="first_name" id="firstName"/ >
+
+    <label for="lastName">Last name:</label>
+    <input type="text" name="last_name" id="lastName"/ >
+
+    <label for="house_id"></label>
+    <select name="house_id" id="house">
+      <option disabled selected value> -- select house -- </option>
+      <% for house in @houses %>
+      <option value="<%= house.id %>">
+        <%= house.name %>
+      </option>
+      <% end %>
+    </select>
+
+    <label for="age">Age:</label>
+    <input type="number" min=0 max=999 name="age" id="age"/ >
+
+    <input type="submit" value="Add Student" id="btn-new-student">
+
+  </form>
+</div>

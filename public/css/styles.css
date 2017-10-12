@@ -1,0 +1,192 @@
+body {
+  margin: 0 auto;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+h3 {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+p {
+  padding: 10px 0px 0px 10px;
+}
+
+/*menu navigation*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    overflow: hidden;
+    background-color: #6900ab;
+    display: flex;
+}
+
+li {
+    float: right;
+    padding-top: 30px;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    height: 100%;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.menu {
+  width: 100%;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  padding-right: 25px;
+}
+
+article  {
+  background-color: lightGrey;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+article:nth-child(2n) {
+    background: lightBlue;
+}
+
+#btn-new-student {
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1.15em;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+select {
+  height: 50px;
+  font-size: 24px;
+}
+
+option {
+font-size: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 50px 0px 50px;
+}
+
+input {
+  height: 50px;
+  font-size: 24px;
+}
+
+label {
+  margin-top: 18px;
+}
+
+/*buttons*/
+#actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+#btn-get {
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1.15em;
+  cursor:pointer;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+#btn-edit {
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1.15em;
+  cursor:pointer;
+  height: 30px;
+}
+
+#btn-delete {
+  background-color: tomato;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  font-size: 1.15em;
+  cursor: pointer;
+  /*margin-top: 5px;*/
+  height: 30px;
+}
+
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+}
+
+/* Add a red background color to navbar links on hover */
+/*.navbar li:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}*/
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: left;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
